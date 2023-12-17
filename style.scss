@@ -1,0 +1,94 @@
+// styles.scss
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.foto {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+}
+
+section {
+    margin-top: 20px;
+
+    h2 {
+        color: #007bff;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    img {
+        max-width: 20%;
+        height: 300px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none; // ховаємо основне меню на більших екранах
+    }
+
+    .mobile-menu-btn {
+        display: block; // показуємо кнопку на менших екранах
+        font-size: 60px; // збільште розмір шрифту на ваш смак
+        cursor: pointer;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-open {
+        display: block; // показуємо меню, коли воно відкрите
+    }
+}
